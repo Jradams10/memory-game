@@ -1,0 +1,133 @@
+html {
+	min-height: 100%;
+} 
+
+body {
+	text-align: center;
+	font-size: 10px;
+	font-weight: 400;
+	font-family: 'Open Sans', sans-serif;
+	background-color: #ffffff;
+	padding: 5%;
+	background: linear-gradient(#ffffff, #BCD5D9);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+}
+
+h1 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 6em;
+	line-height: 1em;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+}
+
+h4 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	line-height: 3em;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+
+}
+
+h6 {
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 1.25em;
+	line-height: 1.75em;
+	letter-spacing: .1em;
+	text-transform: uppercase;
+}
+
+
+div.line {
+	height: 4px;
+	width:15%;
+	background-color: #000000;
+	border-radius: 2px;
+	margin: 8% auto;
+}
+
+p {
+	font-size: 1.25em;
+	line-height: 1.75em;
+	margin: 8%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a.button {
+	border: 4px solid;
+	border-radius: 2em;
+	padding: .5em 1em .5em 1em;
+	background-color: #ffffff;
+	font-family: 'Oswald', sans-serif;
+	font-weight: 700;
+	font-size: 2em;
+	letter-spacing: .15em;
+	text-transform: uppercase;
+	color:#000000;
+	display:inline-block;
+}
+
+a.button:hover {
+	background-color: #000000;
+	color:#BCD5D9;
+}
+
+a.small {
+	padding:.25em .75em .25em .75em;
+	font-size: 1.5em;
+	color:#BCD5D9;
+}
+
+a.small:hover {
+	color:#ffffff;
+	background-color:#BCD5D9;
+}
+
+
+
+/*board div*/
+section.board {
+	margin: 2em auto;
+}
+
+div.box {
+	margin:1em;
+	height: 15em;
+	width: 15em;
+	background-color:#ffffff;
+	border: 4px solid #ffffff;
+	display: inline-block;
+}
+div.box:hover {
+	background-color:#000000;
+}
+
+.color{
+	background-color:#333333;
+}
+
+/*.counter {
+	margin: 2em 1.5em 5em 1.5em;
+	
+}*/
+/*section.counter > h6 {
+	text-align: left;
+
+}*/
+#counter-left {
+	float:left;
+	margin: 2em 1.5em 5em 1.5em;
+}
+#counter-right {
+	float:right;
+	margin: 2em 1.5em 5em 1.5em;
+}
+

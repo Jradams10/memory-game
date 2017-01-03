@@ -1,0 +1,57 @@
+$(function(){
+
+	//first declair variable array of the divs
+	var boxes = [
+		'<div class="box"></div>',
+		'<div class="box"></div>',
+		'<div class="box"></div>',
+		'<div class="box"></div>',
+		'<div class="box"></div>',
+		'<div class="box"></div>',
+		'<div class="box"></div>',
+		'<div class="box"></div>',
+	]
+
+	//then randomize divs placement
+
+	function addBoxes(boxes) {
+		$('.board').append(boxes);
+	} 
+
+	boxes.forEach(addBoxes);
+
+
+	//then create if/else if/ else functions that will controll for when people click on a div
+
+
+	function addBoxColor () {
+		$(this).css('background-color', '#333333');
+	}
+
+	function removeBoxColor () {
+		$(this).css('color')
+	}
+
+		// user clicks on a box the box's background color will change.
+	$('.box').click(function() {
+			if($(this).css('background-color', 'white')) {
+				$(this).css('background-color', 'red');
+			}
+			else if(!$(this).css('background-color', 'white')) {
+				$(this).css('background-color', 'white');
+			}
+		});
+
+		// user clicks on a second box the background color will change
+
+		// if the box colors are the same, the boxes will stay matched and the tally at the bottom will change by subtracting one from the unmatched line and adding one to the matched line
+
+		// if the colors do not match the colors will reset to being blank/white boxes. 
+
+		// then the process starts over.
+
+	// when all of the boxes are matched there will be an overlay screen that comes up with a text that says complete and buttons that lead to home screen, replay level and next level.
+
+
+})
+
